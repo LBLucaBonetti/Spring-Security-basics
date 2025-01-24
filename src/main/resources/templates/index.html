@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>XSS demo</title>
+</head>
+<body>
+    <h1>Hello!</h1>
+    <p th:utext="${message}"></p>
+</body>
+<script>
+    localStorage.setItem("secret", "I'm half a Pokémon and half a Margherita pizza");
+</script>
+</html>
