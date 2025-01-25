@@ -2,6 +2,13 @@
 
 Source code of my talk
 
+### Repository structure
+
+Here is a list of what you will find in this repository, branch by branch:
+
+- <code>main</code>: a Spring Boot basic project exposing a single REST endpoint, unsecured, for reference
+- <code>feature/xss</code>: code example for the XSS vulnerability
+
 ### Notes for IntelliJ IDEA
 
 Go to <code>File > Settings > Build, Execution, Deployment > Compiler</code> and turn the <code>
