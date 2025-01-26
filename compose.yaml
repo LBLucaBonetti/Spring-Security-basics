@@ -1,0 +1,12 @@
+services:
+  email:
+    image: 'corpusops/mailhog:latest'
+    container_name: email
+    ports:
+      - "8025:8025"
+      - "1025:1025"
+    healthcheck:
+      test: "curl -f localhost:8025/api/v2/messages"
+      interval: 10s
+      timeout: 5s
+      retries: 3
